@@ -1,0 +1,11 @@
+<div class="card h-100 shadow-sm">
+  <img [src]="product.image || 'https://via.placeholder.com/150'" class="card-img-top" alt="{{ product.name }}">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">
+      <strong>Kategoria:</strong> {{ product.category }}<br>
+      <strong>Cena:</strong> {{ product.cena | currency:'PLN':'symbol' }}
+    </p>
+    <button class="btn btn-primary mt-auto w-100" (click)="addToCart(product)">Dodaj do koszyka</button>
+  </div>
+</div>
