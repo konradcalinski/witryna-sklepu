@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Podstawowy plan treningowy",
+      "category": "trening",
+      "cena": 149.99,
+      "image": "/grafika1.png"
+    },
+    {
+      "id": 2,
+      "name": "Zaawansowany plan treningowy",
+      "category": "trening",
+      "cena": 249.99,
+      "image": "/grafika2.png"
+    },
+    {
+      "id": 3,
+      "name": "Spersonalizowany plan treningowy",
+      "category": "trening",
+      "cena": 349.99,
+      "image": "/grafika3.png"
+    },
+    {
+      "id": 4,
+      "name": "Indywidualny plan treningowy",
+      "category": "premium",
+      "cena": 1299.99,
+      "image": "/grafika4.png"
+    },
+    {
+      "id": 5,
+      "name": "Zbiór przepisów",
+      "category": "dieta",
+      "cena": 59.99,
+      "image": "/grafika5.png"
+    },
+    {
+      "id": 6,
+      "name": "Spersonalizowana dieta",
+      "category": "dieta",
+      "cena": 299.99,
+      "image": "/grafika6.png"
+    },
+    {
+      "id": 7,
+      "name": "Indywidualny plan dietowy",
+      "category": "premium",
+      "cena": 849.99,
+      "image": "/grafika7.png"
+    },
+    {
+      "id": 8,
+      "name": "Spersonalizowany pakiet, dieta + trening",
+      "category": "premium",
+      "cena": 499.99,
+      "image": "/grafika8.png"
+    },
+    {
+      "id": 9,
+      "name": "Indywidualny pakiet, dieta + trening",
+      "category": "premium",
+      "cena": 1799.99,
+      "image": "/grafika9.png"
+    }
+  ],
+  "cart": [],
+  "orders": []
+}
