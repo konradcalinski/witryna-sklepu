@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
   filteredProducts: Product[] = [];
+  activeCategory: string = '';
 
   categories: { [key: string]: boolean } = {
     trening: true,
@@ -30,23 +31,21 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.productService.getProducts().subscribe(products => {
       this.products = products;
-      this.applyFilters();
+      this.filteredProducts = products;
     });
   }
 
-  updateCategoryFilter(category: string, event: Event) {
-    const checkbox = event.target as HTMLInputElement;
-    this.categories[category] = checkbox.checked;
+  updateCategoryFilter(category: string) {
+    this.activeCategory = category;
     this.applyFilters();
   }
 
   applyFilters() {
-    const activeCategories = Object.keys(this.categories).filter(cat => this.categories[cat]);
-    if (activeCategories.length === 0) {
-      this.filteredProducts = [];
+   if (this.activeCategory === "all") {
+      this.filteredProducts = this.products;
     } else {
-      this.filteredProducts = this.products.filter(product =>
-        activeCategories.includes(product.category)
+      this.filteredProducts = this.products.filter(
+        product => product.category === this.activeCategory
       );
     }
   }

@@ -9,6 +9,7 @@ import { CurrencyPipe } from '@angular/common';
   imports: [
     CurrencyPipe
   ],
+  standalone: true,
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent {

@@ -2,30 +2,35 @@
   <div class="mb-3">
     <label class="form-check-label me-3">
       <input
-        type="checkbox"
-        class="form-check-input"
+        type="button"
+        class="btn-primary"
         value="trening"
-        (change)="updateCategoryFilter('trening', $event)"
-        [checked]="categories['trening']">
+        (click) = "updateCategoryFilter('trening')">
       Trening
     </label>
     <label class="form-check-label me-3">
       <input
-        type="checkbox"
-        class="form-check-input"
+        type="button"
+        class="btn-primary"
         value="dieta"
-        (change)="updateCategoryFilter('dieta', $event)"
-        [checked]="categories['dieta']">
+        (click)="updateCategoryFilter('dieta')">
       Dieta
+    </label>
+    <label class="form-check-label me-3">
+      <input
+        type="button"
+        class="btn-primary"
+        value="premium"
+        (click)="updateCategoryFilter('premium')">
+      Premium
     </label>
     <label class="form-check-label">
       <input
-        type="checkbox"
-        class="form-check-input"
-        value="premium"
-        (change)="updateCategoryFilter('premium', $event)"
-        [checked]="categories['premium']">
-      Premium
+        type="button"
+        class="btn-primary"
+        value="Wszystkie"
+        (click)="updateCategoryFilter('all')">
+      Wszystkie
     </label>
   </div>
 
